@@ -24,6 +24,7 @@
 		0F87C90C18F8EFEB00357CB6 /* BillSummaryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F87C90B18F8EFEB00357CB6 /* BillSummaryCell.m */; };
 		0F87C90F18F8F05F00357CB6 /* BillSummaryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F87C90E18F8F05F00357CB6 /* BillSummaryTableViewController.m */; };
 		0F87C91218F8F0C300357CB6 /* Bill.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F87C91118F8F0C300357CB6 /* Bill.m */; };
+		0F87C91518F8FC2A00357CB6 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F87C91418F8FC2A00357CB6 /* MenuViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		0F87C90E18F8F05F00357CB6 /* BillSummaryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BillSummaryTableViewController.m; sourceTree = "<group>"; };
 		0F87C91018F8F0C300357CB6 /* Bill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bill.h; sourceTree = "<group>"; };
 		0F87C91118F8F0C300357CB6 /* Bill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bill.m; sourceTree = "<group>"; };
+		0F87C91318F8FC2A00357CB6 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		0F87C91418F8FC2A00357CB6 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,8 @@
 				0F85382218F8E07C0072CE88 /* cheersAppDelegate.h */,
 				0F85382318F8E07C0072CE88 /* cheersAppDelegate.m */,
 				0F85382518F8E07C0072CE88 /* Main.storyboard */,
+				0F87C91318F8FC2A00357CB6 /* MenuViewController.h */,
+				0F87C91418F8FC2A00357CB6 /* MenuViewController.m */,
 				0F87C90D18F8F05F00357CB6 /* BillSummaryTableViewController.h */,
 				0F87C90E18F8F05F00357CB6 /* BillSummaryTableViewController.m */,
 				0F87C91018F8F0C300357CB6 /* Bill.h */,
@@ -269,6 +274,7 @@
 				0F85382418F8E07C0072CE88 /* cheersAppDelegate.m in Sources */,
 				0F87C90C18F8EFEB00357CB6 /* BillSummaryCell.m in Sources */,
 				0F85382018F8E07C0072CE88 /* main.m in Sources */,
+				0F87C91518F8FC2A00357CB6 /* MenuViewController.m in Sources */,
 				0F87C90F18F8F05F00357CB6 /* BillSummaryTableViewController.m in Sources */,
 				0F85382A18F8E07C0072CE88 /* cheersViewController.m in Sources */,
 			);

@@ -16,13 +16,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BrO-8H-q1o">
+                                <rect key="frame" x="0.0" y="65" width="227" height="510"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="0TO-I8-zZy" kind="embed" identifier="Menu" id="AWQ-dR-f1r"/>
+                                </connections>
+                            </containerView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="72" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="YkC-uI-rCl">
-                                <rect key="frame" x="0.0" y="63" width="320" height="505"/>
+                                <rect key="frame" x="0.0" y="130" width="320" height="438"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="BillSummaryCell" rowHeight="72" id="DHI-HT-2E1" customClass="BillSummaryCell">
-                                        <rect key="frame" x="0.0" y="86" width="320" height="72"/>
+                                        <rect key="frame" x="0.0" y="22" width="320" height="72"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DHI-HT-2E1" id="Iur-hx-1no">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="71"/>
@@ -66,9 +74,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="CHEERS" id="kas-Ms-NkX"/>
+                    <navigationItem key="navigationItem" title="CHEERS" id="kas-Ms-NkX">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="nP3-ch-rZt">
+                            <connections>
+                                <action selector="showMenu:" destination="fax-O2-w7T" id="EWP-MJ-E7y"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="MenuView" destination="BrO-8H-q1o" id="25X-Aw-K8f"/>
                         <outlet property="billTableView" destination="YkC-uI-rCl" id="VSl-Up-ThQ"/>
+                        <outlet property="totalBalanceView" destination="w4F-ex-0tN" id="SXy-xT-nIN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RpL-tJ-92m" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -92,6 +108,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YDD-tc-FpM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2096" y="3021"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="BtN-0Z-XTx">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="0TO-I8-zZy" customClass="MenuViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tlB-8R-cgY"/>
+                        <viewControllerLayoutGuide type="bottom" id="ehX-OO-67K"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="oBq-my-SC9">
+                        <rect key="frame" x="0.0" y="0.0" width="227" height="510"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oke-gW-rOR">
+                                <rect key="frame" x="37" y="211" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="slideBack:" destination="0TO-I8-zZy" eventType="touchUpInside" id="Ngb-78-qBT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CIp-uS-k9S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3154" y="3021"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
