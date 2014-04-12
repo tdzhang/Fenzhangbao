@@ -21,6 +21,9 @@
 		0F85383518F8E07C0072CE88 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F85381718F8E07C0072CE88 /* UIKit.framework */; };
 		0F85383D18F8E07C0072CE88 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F85383B18F8E07C0072CE88 /* InfoPlist.strings */; };
 		0F85383F18F8E07C0072CE88 /* FenzhangbaoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F85383E18F8E07C0072CE88 /* FenzhangbaoTests.m */; };
+		0F87C90C18F8EFEB00357CB6 /* BillSummaryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F87C90B18F8EFEB00357CB6 /* BillSummaryCell.m */; };
+		0F87C90F18F8F05F00357CB6 /* BillSummaryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F87C90E18F8F05F00357CB6 /* BillSummaryTableViewController.m */; };
+		0F87C91218F8F0C300357CB6 /* Bill.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F87C91118F8F0C300357CB6 /* Bill.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,12 @@
 		0F85383A18F8E07C0072CE88 /* FenzhangbaoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FenzhangbaoTests-Info.plist"; sourceTree = "<group>"; };
 		0F85383C18F8E07C0072CE88 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0F85383E18F8E07C0072CE88 /* FenzhangbaoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FenzhangbaoTests.m; sourceTree = "<group>"; };
+		0F87C90A18F8EFEB00357CB6 /* BillSummaryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BillSummaryCell.h; sourceTree = "<group>"; };
+		0F87C90B18F8EFEB00357CB6 /* BillSummaryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BillSummaryCell.m; sourceTree = "<group>"; };
+		0F87C90D18F8F05F00357CB6 /* BillSummaryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BillSummaryTableViewController.h; sourceTree = "<group>"; };
+		0F87C90E18F8F05F00357CB6 /* BillSummaryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BillSummaryTableViewController.m; sourceTree = "<group>"; };
+		0F87C91018F8F0C300357CB6 /* Bill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bill.h; sourceTree = "<group>"; };
+		0F87C91118F8F0C300357CB6 /* Bill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bill.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +124,12 @@
 				0F85382218F8E07C0072CE88 /* cheersAppDelegate.h */,
 				0F85382318F8E07C0072CE88 /* cheersAppDelegate.m */,
 				0F85382518F8E07C0072CE88 /* Main.storyboard */,
+				0F87C90D18F8F05F00357CB6 /* BillSummaryTableViewController.h */,
+				0F87C90E18F8F05F00357CB6 /* BillSummaryTableViewController.m */,
+				0F87C91018F8F0C300357CB6 /* Bill.h */,
+				0F87C91118F8F0C300357CB6 /* Bill.m */,
+				0F87C90A18F8EFEB00357CB6 /* BillSummaryCell.h */,
+				0F87C90B18F8EFEB00357CB6 /* BillSummaryCell.m */,
 				0F85382818F8E07C0072CE88 /* cheersViewController.h */,
 				0F85382918F8E07C0072CE88 /* cheersViewController.m */,
 				0F85382B18F8E07C0072CE88 /* Images.xcassets */,
@@ -250,8 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F87C91218F8F0C300357CB6 /* Bill.m in Sources */,
 				0F85382418F8E07C0072CE88 /* cheersAppDelegate.m in Sources */,
+				0F87C90C18F8EFEB00357CB6 /* BillSummaryCell.m in Sources */,
 				0F85382018F8E07C0072CE88 /* main.m in Sources */,
+				0F87C90F18F8F05F00357CB6 /* BillSummaryTableViewController.m in Sources */,
 				0F85382A18F8E07C0072CE88 /* cheersViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,6 +475,7 @@
 				0F85384418F8E07C0072CE88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0F85384518F8E07C0072CE88 /* Build configuration list for PBXNativeTarget "FenzhangbaoTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +484,7 @@
 				0F85384718F8E07C0072CE88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
