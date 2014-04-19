@@ -13,7 +13,7 @@
 @property (weak, nonatomic) IBOutlet UIView *MenuView;
 @property (weak, nonatomic) IBOutlet UITableView *billTableView;
 @property (weak, nonatomic) IBOutlet UIView *totalBalanceView;
-@property (nonatomic,strong)BillSummaryTableViewController* billTVC;
+@property (nonatomic,strong) BillSummaryTableViewController *billTVC;
 @end
 
 @implementation cheersViewController
@@ -27,14 +27,13 @@
     [self.billTableView setDelegate:self.billTVC];
     
     //temporaly add some data
-    Bill* b1=[[Bill alloc] init];
+    Bill *b1=[[Bill alloc] init];
     b1.billName=@"Cell Phone Bill";
     b1.billBalance=100.0;
-    Bill* b2=[[Bill alloc] init];
+    Bill *b2=[[Bill alloc] init];
     b2.billName=@"Supermarket";
     b2.billBalance=-50.0;
     self.billTVC.bills=@[b1,b2];
-    
     
 }
 

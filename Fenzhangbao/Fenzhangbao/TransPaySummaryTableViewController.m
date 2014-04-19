@@ -1,18 +1,20 @@
 //
-//  BillSummaryTableViewController.m
+//  TransPaySummaryTableViewController.m
 //  Fenzhangbao
 //
-//  Created by Tongda Zhang on 4/11/14.
+//  Created by Bing Han on 4/18/14.
 //  Copyright (c) 2014 Deep126. All rights reserved.
 //
 
-#import "BillSummaryTableViewController.h"
+#import "TransPaySummaryTableViewController.h"
+#import "TransPaySummaryCell.h"
+#import "TransPay.h"
 
-@interface BillSummaryTableViewController ()
+@interface TransPaySummaryTableViewController ()
 
 @end
 
-@implementation BillSummaryTableViewController
+@implementation TransPaySummaryTableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -51,17 +53,19 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [self.bills count];
+    return [self.transPays count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    TransPaySummaryCell *cell = [tableView dequeueReusableCellWithIdentifier:@"transPaySummaryCell" forIndexPath:indexPath];
     
-    BillSummaryCell *cell = [tableView dequeueReusableCellWithIdentifier:@"billSummaryCell" forIndexPath:indexPath];
-    Bill* billObject=[self.bills objectAtIndex:indexPath.row];
-    cell.textLabel.text = billObject.billName;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"Balance: %.2f",billObject.billBalance];
+    TransPay *transPay = [self.transPays objectAtIndex:indexPath.row];
+    cell.textLabel.text = transPay.transPayTitle;
+    cell.detailTextLabel.text = transPay.transPayDetails;
+
+    
     return cell;
 }
 

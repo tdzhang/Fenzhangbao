@@ -25,6 +25,11 @@
 		0F87C90F18F8F05F00357CB6 /* BillSummaryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F87C90E18F8F05F00357CB6 /* BillSummaryTableViewController.m */; };
 		0F87C91218F8F0C300357CB6 /* Bill.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F87C91118F8F0C300357CB6 /* Bill.m */; };
 		0F87C91518F8FC2A00357CB6 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F87C91418F8FC2A00357CB6 /* MenuViewController.m */; };
+		6714C6E01902290200E61DF3 /* BillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6714C6DF1902290200E61DF3 /* BillViewController.m */; };
+		6714C6E31902307C00E61DF3 /* TransPaySummaryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6714C6E21902307C00E61DF3 /* TransPaySummaryCell.m */; };
+		6714C6E61902310300E61DF3 /* TransPaySummaryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6714C6E51902310300E61DF3 /* TransPaySummaryTableViewController.m */; };
+		6714C6E91902343400E61DF3 /* TransPay.m in Sources */ = {isa = PBXBuildFile; fileRef = 6714C6E81902343400E61DF3 /* TransPay.m */; };
+		6714C6EC190244BC00E61DF3 /* AddBillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6714C6EB190244BC00E61DF3 /* AddBillViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +70,16 @@
 		0F87C91118F8F0C300357CB6 /* Bill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bill.m; sourceTree = "<group>"; };
 		0F87C91318F8FC2A00357CB6 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		0F87C91418F8FC2A00357CB6 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		6714C6DE1902290200E61DF3 /* BillViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BillViewController.h; sourceTree = "<group>"; };
+		6714C6DF1902290200E61DF3 /* BillViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BillViewController.m; sourceTree = "<group>"; };
+		6714C6E11902307C00E61DF3 /* TransPaySummaryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransPaySummaryCell.h; sourceTree = "<group>"; };
+		6714C6E21902307C00E61DF3 /* TransPaySummaryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransPaySummaryCell.m; sourceTree = "<group>"; };
+		6714C6E41902310300E61DF3 /* TransPaySummaryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransPaySummaryTableViewController.h; sourceTree = "<group>"; };
+		6714C6E51902310300E61DF3 /* TransPaySummaryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransPaySummaryTableViewController.m; sourceTree = "<group>"; };
+		6714C6E71902343400E61DF3 /* TransPay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransPay.h; sourceTree = "<group>"; };
+		6714C6E81902343400E61DF3 /* TransPay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransPay.m; sourceTree = "<group>"; };
+		6714C6EA190244BC00E61DF3 /* AddBillViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddBillViewController.h; sourceTree = "<group>"; };
+		6714C6EB190244BC00E61DF3 /* AddBillViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddBillViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +142,16 @@
 				0F85382218F8E07C0072CE88 /* cheersAppDelegate.h */,
 				0F85382318F8E07C0072CE88 /* cheersAppDelegate.m */,
 				0F85382518F8E07C0072CE88 /* Main.storyboard */,
+				6714C6EA190244BC00E61DF3 /* AddBillViewController.h */,
+				6714C6EB190244BC00E61DF3 /* AddBillViewController.m */,
+				6714C6E71902343400E61DF3 /* TransPay.h */,
+				6714C6E81902343400E61DF3 /* TransPay.m */,
+				6714C6E41902310300E61DF3 /* TransPaySummaryTableViewController.h */,
+				6714C6E51902310300E61DF3 /* TransPaySummaryTableViewController.m */,
+				6714C6E11902307C00E61DF3 /* TransPaySummaryCell.h */,
+				6714C6E21902307C00E61DF3 /* TransPaySummaryCell.m */,
+				6714C6DE1902290200E61DF3 /* BillViewController.h */,
+				6714C6DF1902290200E61DF3 /* BillViewController.m */,
 				0F87C91318F8FC2A00357CB6 /* MenuViewController.h */,
 				0F87C91418F8FC2A00357CB6 /* MenuViewController.m */,
 				0F87C90D18F8F05F00357CB6 /* BillSummaryTableViewController.h */,
@@ -270,13 +295,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6714C6E61902310300E61DF3 /* TransPaySummaryTableViewController.m in Sources */,
+				6714C6E31902307C00E61DF3 /* TransPaySummaryCell.m in Sources */,
 				0F87C91218F8F0C300357CB6 /* Bill.m in Sources */,
+				6714C6E01902290200E61DF3 /* BillViewController.m in Sources */,
 				0F85382418F8E07C0072CE88 /* cheersAppDelegate.m in Sources */,
+				6714C6EC190244BC00E61DF3 /* AddBillViewController.m in Sources */,
 				0F87C90C18F8EFEB00357CB6 /* BillSummaryCell.m in Sources */,
 				0F85382018F8E07C0072CE88 /* main.m in Sources */,
 				0F87C91518F8FC2A00357CB6 /* MenuViewController.m in Sources */,
 				0F87C90F18F8F05F00357CB6 /* BillSummaryTableViewController.m in Sources */,
 				0F85382A18F8E07C0072CE88 /* cheersViewController.m in Sources */,
+				6714C6E91902343400E61DF3 /* TransPay.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

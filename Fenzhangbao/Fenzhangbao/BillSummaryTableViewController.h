@@ -11,5 +11,5 @@
 #import "BillSummaryCell.h"
 
 @interface BillSummaryTableViewController : UITableViewController
-@property(nonatomic,strong) NSArray* bills;
+@property(nonatomic,strong) NSArray *bills;
 @end
